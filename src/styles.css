@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0e1a28;
+  --color-navy-deep: #071018;
+  --color-ink: #f4efe6;
+  --color-muted: #b7c0c8;
+  --color-gold: #c4a35a;
+  --color-gold-soft: #d4bc86;
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+    background: var(--color-navy-deep);
+    color: var(--color-ink);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
